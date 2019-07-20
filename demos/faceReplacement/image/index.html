@@ -6,7 +6,7 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
         
-        <title>JEELIZ FACE FILTER : FACE REPLACEMENT DEMO</title>
+        <title>FACE DEMO</title>
         
         <!-- INCLUDE JEELIZ FACEFILTER SCRIPT -->
         <script type="text/javascript" src="../../../dist/jeelizFaceFilter.js"></script>
@@ -14,9 +14,7 @@
         <!-- INCLUDE DEMO SCRIPT -->
         <script type="text/javascript" src="./demo_faceReplacement.js"></script>
 
-        <!-- INCLUDE FORK ME ON GITHUB BANNER -->
-        <script type="text/javascript" src="../../appearance/widget.js"></script>
-
+  
         <style type='text/css'>
         body {
             margin: 0px;
@@ -93,44 +91,40 @@
             margin-top: 20px;
         }
         .carouselItem0{
-            background-image: url('thumbnails/Joconde.jpg');
+            background-image: url('thumbnails/IronManm.jpg');
             width: 86px !important;
         }
         .carouselItem1 {
-            background-image: url('thumbnails/pirates_of_the_caribbean_thumbnail.jpg');
+            background-image: url('thumbnails/Hulkm.jpg');
             width: 86px !important;            
         }
         .carouselItem2 {
-            background-image: url('thumbnails/will_smith_thumbnail.jpg');
+            background-image: url('thumbnails/SteveRogersm.jpg');
             width: 86px !important;            
         }
         .carouselItem3 {
-            background-image: url('thumbnails/cosmopolitan_thumbnail.jpg');
-            width: 128px !important;            
+            background-image: url('thumbnails/Thanosm.jpg');
+            width: 86px !important;            
         }
         .carouselItem4 {
-            background-image: url('thumbnails/doors.jpg');
-            width: 128px !important;
+            background-image: url('thumbnails/Lokim.jpg');
+            width: 86px !important;
         }
         .carouselItem5 {
-            background-image: url('thumbnails/louis14.jpg');
-            width: 128px !important;
+            background-image: url('thumbnails/Thorm.jpg');
+            width: 86px !important;
         }
         .carouselItem6 {
-            background-image: url('thumbnails/terminator.jpg');
+            background-image: url('thumbnails/Strangem.jpg');
             width: 86px !important;
         }
         .carouselItem7 {
-            background-image: url('thumbnails/starTrek.jpg');
-            width: 87px !important;
+            background-image: url('thumbnails/BlackPantherm.jpg');
+            width: 86px !important;
         }
         .carouselItem8 {
-            background-image: url('thumbnails/captainAmerica.jpg');
-            width: 227px !important;
-        }
-        .carouselItem9 {
-            background-image: url('thumbnails/liberty.jpg');
-            width: 184px !important;
+            background-image: url('thumbnails/StarLordm.jpg');
+            width: 86px !important;
         }
         .carouselItemCustom{
             background-image: url('thumbnails/own.png');
@@ -176,48 +170,46 @@
             We will search for a face on the provided picture
             (and display the found face detected State in the JS console)
             Otherwise we build the image mask directly using the detected State.
+			{x:0.10262,y:0.07527,s:0.44026,ry:0.15906}
         -->
         <div id="carousel">
             <div
-                onclick="change_artPainting('images/Joconde.jpg', {x:-0.09803,y:0.44314,s:0.18782,ry:-0.04926})"
+                onclick="change_artPainting('images/IronMan.jpg', {x:0.25188,y:0.25925,s:0.21231,ry:0.03276})"
                 class='carouselItem carouselItem0'
             ></div>
             <div
-                onclick="change_artPainting('images/pirates_of_the_caribbean.jpg', {x:0.04351,y:0.27059,s:0.3098,ry:0.06192})"
+                onclick="change_artPainting('images/Hulk.jpg', {x:0.01977,y:-0.05604,s:0.70554,ry:-0.06838})"
                 class='carouselItem carouselItem1'
             ></div>
             <div
-                onclick="change_artPainting('images/will_smith.jpg', {x:0.0202,y:0.36471,s:0.50589,ry:-0.03227})"
+                onclick="change_artPainting('images/SteveRogers.jpg', {x:-0.05193,y:0.17529,s:0.29856,ry:-0.10819})"
                 class='carouselItem carouselItem2'
             ></div>
             <div
-                onclick="change_artPainting('images/cosmopolitan.jpg', {x:0.05098,y:0.59216,s:0.12157,ry:-0.02587})"
+                onclick="change_artPainting('images/Thanos.jpg', {x:-0.07281,y:0.12084,s:0.41362,ry:0.21745})"
                 class='carouselItem carouselItem3'
             ></div>
             <div
-                onclick="change_artPainting('images/doors.jpg', {x:0.15008,y:0.2676,s:0.27433,ry:0.15356})"
+                onclick="change_artPainting('images/Loki.jpg', {x:-0.19901,y:-0.00735,s:0.35407,ry:-0.18856})"
                 class='carouselItem carouselItem4'
             ></div>
             <div
-                onclick="change_artPainting('images/louis14.jpg', {x:0.09804,y:0.26254,s:0.1098,ry:-0.26134})"
+                onclick="change_artPainting('images/Thor.jpg', {x:-0.03505,y:0.48989,s:0.16857,ry:0.25704})"
                 class='carouselItem carouselItem5'
             ></div>
             <div
-                onclick="change_artPainting('images/terminator.jpg', {x:-0.05805,y:0.41531,s:0.2408,ry:0.12903})"
+                onclick="change_artPainting('images/Strange.jpg', {x:0.09447,y:0.10966,s:0.29916,ry:-0.15655})"
                 class='carouselItem carouselItem6'
             ></div>
             <div
-                onclick="change_artPainting('images/starTrek.jpg', {x:-0.00433,y:0.34902,s:0.37124,ry:0.02544})"
+                onclick="change_artPainting('images/BlackPanther.jpg', {x:-0.0457,y:0.67483,s:0.13793,ry:-0.25451})"
                 class='carouselItem carouselItem7'
             ></div>
             <div
-                onclick="change_artPainting('images/captainAmerica.jpg', {x:-0.02745,y:0.45216,s:0.08627,ry:-0.16854})"
+                onclick="change_artPainting('images/StarLord.jpg', {x:0.07688,y:0.19784,s:0.21916,ry:0.13124})"
                 class='carouselItem carouselItem8'
             ></div>
-            <div
-                onclick="change_artPainting('images/liberty.jpg', {x:0.07451,y:-0.08849,s:0.12549,ry:-0.02005})"
-                class='carouselItem carouselItem9'
-            ></div>
+           
             <div class='carouselItem carouselItemCustom'>
                 <div class='carouselItemCustomText'>
                     TRY WITH YOUR OWN IMAGE :
